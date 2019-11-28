@@ -8,7 +8,7 @@ class OrderItem extends Model
 {
     protected $fillable =['amount', 'price', 'review', 'reviewed_at'];
     protected $dates = ['reviewed_at'];
-    protected $timestamps = false;
+    public $timestamps = false;
 
     public function product()
     {
