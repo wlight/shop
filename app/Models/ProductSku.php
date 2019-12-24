@@ -14,7 +14,7 @@ class ProductSku extends Model
         return $this->belongsTo(Product::class);
     }
 
-    public function decrementStock($amount)
+    public function decreaseStock($amount)
     {
         if ($amount < 0) {
             throw new InternalException('减库存不可小于0');
